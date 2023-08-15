@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.cb387a40.css",
-    "main.js": "/static/js/main.f265a6ee.js",
+    "main.css": "/static/css/main.5ea6ad84.css",
+    "main.js": "/static/js/main.d8019e74.js",
     "static/js/787.633816a4.chunk.js": "/static/js/787.633816a4.chunk.js",
     "static/media/bbs_anim.gif": "/static/media/bbs_anim.b13f8fa0a4365fd82df8.gif",
     "static/media/banker-text-old.png": "/static/media/banker-text-old.fdcb10ed423fe0e2321c.png",
     "static/media/player-text-old.png": "/static/media/player-text-old.9ce0aef766e55af0049b.png",
+    "static/media/wallet-input-bg.svg": "/static/media/wallet-input-bg.273e101d00771ae8fe2c.svg",
     "static/media/eight-bit-dragon.otf": "/static/media/eight-bit-dragon.1523c2b5c44d297c4ac6.otf",
     "static/media/action-btn-4.png": "/static/media/action-btn-4.44a40a1e21556cb2dc7d.png",
     "static/media/baccarat-logo.svg": "/static/media/baccarat-logo.1df95104b877d7626c4a40064b2bb18b.svg",
     "static/media/stats-bg-new.svg": "/static/media/stats-bg-new.e570a61c052e0468bbfd.svg",
     "static/media/bg-watermark.svg": "/static/media/bg-watermark.a9d554513f2d63ac7d10.svg",
     "index.html": "/index.html",
-    "main.cb387a40.css.map": "/static/css/main.cb387a40.css.map",
-    "main.f265a6ee.js.map": "/static/js/main.f265a6ee.js.map",
+    "main.5ea6ad84.css.map": "/static/css/main.5ea6ad84.css.map",
+    "main.d8019e74.js.map": "/static/js/main.d8019e74.js.map",
     "787.633816a4.chunk.js.map": "/static/js/787.633816a4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cb387a40.css",
-    "static/js/main.f265a6ee.js"
+    "static/css/main.5ea6ad84.css",
+    "static/js/main.d8019e74.js"
   ]
 }
