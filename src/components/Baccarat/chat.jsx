@@ -8,41 +8,42 @@ function Chat() {
     <div className="chat">
       <div className="chat-wrapper">
         <div className="chat-content">
-          <div className="chat-list">
+          <div className="chat-list bg-[#2a0b11]">
             <div className="chat-user">
               <img src={user1} alt="" />
             </div>
             <div className="chat-message">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
-              dolor sit amet, consectetur adipiscing elit.
+            @username: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </div>
           </div>
-          <div className="chat-list">
+          <div className="chat-list bg-[#090f10]">
             <div className="chat-user">
               <img src={user2} alt="" />
             </div>
             <div className="chat-message">
-              @username: Lorem ipsum dolor sit amet, consectetur adipiscing
+              <span className="text-[#FF44D6]">@username: </span>
+              Lorem ipsum dolor sit amet, consectetur adipiscing
               elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Lorem ipsum dolor sit amet.
             </div>
           </div>
-          <div className="chat-list">
+          <div className="chat-list bg-[#090f10]">
             <div className="chat-user">
               <img src={user3} alt="" />
             </div>
             <div className="chat-message">
-              @username: Lorem ipsum dolor sit amet, consectetur adipiscing
+              <span className="text-[#0BB6FF]">@username: </span>
+              Lorem ipsum dolor sit amet, consectetur adipiscing
               elit.
             </div>
           </div>
-          <div className="chat-list">
+          <div className="chat-list bg-[#090f10]">
             <div className="chat-user">
               <img src={user3} alt="" />
             </div>
             <div className="chat-message">
-              @username: Lorem ipsum dolor sit amet, consectetur adipiscing
+              <span className="text-[#FFD43D]">@username: </span>
+              Lorem ipsum dolor sit amet, consectetur adipiscing
               elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </div>

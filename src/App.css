@@ -44,8 +44,9 @@
 
 .baccarat-view {
   background: url(./assets/bg-watermark.svg);
-  background-size: contain;
+  background-size: cover;
   width: 100%;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   border-radius: 20px;
@@ -57,9 +58,7 @@
   color: #fff;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  /* gap: 100px; */
   position: relative;
 }
 
@@ -76,11 +75,9 @@
 }
 
 .baccarat-footer-grid {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
   text-align: center;
-  max-width: 96%;
+  max-width: 95%;
   width: 100%;
 }
 
@@ -89,14 +86,15 @@
 .player {
   position: relative;
   max-width: 444px;
+  width: 50%;
 }
 
 .player-cards div {
   width: 96px;
 }
 .player-text {
-  padding-bottom: 50px;
-  text-align: center;
+  width: fit-content;
+  margin: auto;
 }
 
 .player-text img {
@@ -149,6 +147,7 @@ div#chip-container img {
 /***************** BANKER *****************/
 
 .banker {
+  width: 50%;
   position: relative;
   max-width: 444px;
 }
@@ -221,8 +220,9 @@ div#chip-container img {
 
 .action-bg:before {
   content: "";
-  background: url(./assets/shadow.png);
-  width: 670px;
+  background: #39020a;
+  border-radius: 5555px;
+  width: 100%;
   height: 167px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -233,11 +233,12 @@ div#chip-container img {
 }
 .action-bg:after {
   content: "";
-  height: calc(100% + 16px);
-  width: calc(100% - 109px);
+  border-radius: 10px;
+  height: calc(100% + 12px);
+  width: calc(100% - 120px);
   position: absolute;
   top: -5px;
-  background: #061216;
+  background: #39020a;
   z-index: 0;
   pointer-events: none;
   left: 0;
@@ -256,6 +257,14 @@ div#chip-container img {
   font-family: "Eight_Bit_Dragon" !important;
   color: #fff;
   font-size: 14px;
+}
+#coins-container button img{
+  width: 100px;
+}
+@media (max-width: 560px) {
+  #coins-container button img{
+    width: 60px;
+  }
 }
 /* #coins-container button{ transition: all ease-in .2s;}
 #coins-container button.five-chip.currency+button.five-chip.currency,
@@ -361,6 +370,12 @@ button.btn-1 {
   left: -4px;
 }
 
+@media (max-width: 660px) {
+  .action-bg button div span{
+    font-size: 18px !important;
+  }
+}
+
 button.btn-2 .stats span {
   color: #67c6ff;
   text-shadow: 1px 1px 1px #000;
@@ -399,15 +414,15 @@ button.btn-2 {
 button.btn-3 {
   /* width: 148px;
   height: 140px; */
-  width: 167px;
-  height: 140px;
+  width: 165px;
+  height: 138px;
   background: url(./assets/action-btn-3.png);
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
-  left: 50%;
+  left: 50.5%;
   transform: translateX(-50%);
-  bottom: 0;
+  bottom: 8px;
   margin-left: 7px;
   z-index: 9;
 }
@@ -666,7 +681,7 @@ i#bankerDivPosition {
 
 .chat-list {
   display: flex;
-  background: #00000052;
+  /* background: #00000052; */
   padding: 10px 15px;
   border-radius: 25px;
   gap: 10px;
@@ -676,10 +691,17 @@ i#bankerDivPosition {
   text-align: left;
   font-size: 10px;
   line-height: 1.5;
+  color: #C2C2C2;
+  width: calc(100% - 25px);
 }
 
+.chat-user {
+  width: 25px;
+  height: 25px;
+}
 .chat-user img {
   width: 22px;
+  height: 22px;
 }
 
 .chat-content {
@@ -712,7 +734,7 @@ i#bankerDivPosition {
   background: transparent !important;
   border: none !important;
   width: 100% !important;
-  padding: 20px 25px !important;
+  padding: 11px 25px !important;
   outline: none !important;
   box-sizing: border-box !important;
   font-family: "Eight_Bit_Dragon" !important;

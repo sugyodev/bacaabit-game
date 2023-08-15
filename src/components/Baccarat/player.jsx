@@ -1,13 +1,13 @@
 import React from "react"
-import playerText from "../../assets/player.png"
+import playerText from "../../assets/player-text-old.png"
 import hidden from "../../assets/cards/hidden.png"
 
 function Player() {
   return (
-    <div className="player">
-      <div className="player-wrapper">
-        <div className="player-text">
-          <img src={playerText} alt="" />
+    <div className="player flex-1">
+      <div className="player-wrapper h-full">
+        <div className="player-text cursor-pointer hover:opacity-80 h-full">
+          <img src={playerText} alt="" className="min-h-[46px] h-full" />
         </div>
         <div className="player-cards">
           <div className="player-cards-placeholder">

@@ -7,7 +7,14 @@ import Chat from "./chat"
 import Player from "./player"
 import Banker from "./banker"
 import Action from "./action"
+import Logo from "../../assets/baccarat-logo.svg"
 import { cardOffsets, selectedWager } from "../../constants"
+import doller from "../../assets/wallet-dollar-old.png"
+import Hidden from "../../assets/cards/hidden.png"
+import H12 from "../../assets/cards/h12.png"
+import B5 from "../../assets/cards/b5.png"
+import CardBack1 from "../../assets/card-back1.png"
+import CardBack2 from "../../assets/card-back2.png"
 
 export const Baccarat = () => {
   const [playerBetAmount, setPlayerBetAmount] = useState([])
@@ -805,50 +812,121 @@ export const Baccarat = () => {
 
   return (
     <div>
-      <div className="baccarat-view">
+      <img src={CardBack1} alt="baccarat" className="absolute w-40 top-0 right-60 hidden xl:block" />
+      <img src={CardBack2} alt="baccarat" className="absolute h-20 md:h-32 right-0 top-28 block xl:hidden" />
+      <div className="baccarat-view py-10">
         <div className="baccarat-wrapper">
-          <div id="chip-container"></div>
-          <div id="coins-container"></div>
-          {/* <RecentBets /> */}
-          <div className="baccarat-card-grid">
+          <img src={Logo} alt="baccarat" className="absolute w-3/4 mt-[450px] mt-[500px] 2xl:mt-60 my-auto" />
+          <div className="bg-deposit bg-no-repeat bg-cover scale-[0.6] sm:scale-100 items-center w-fit p-3 flex gap-4">
+            <button className="bg-redback w-52 h-[80px] bg-cover hover:text-[#ccc]">
+              Deposit
+            </button>
+            <button className="bg-redback w-52 h-[80px] bg-cover hover:text-[#ccc]">
+              Withdraw
+            </button>
+          </div>
+          <div className="2xl:hidden block -mt-4 sm:mt-12 sm:scale-100 scale-[0.6]">
+            <Wallet />
+          </div>
+          <div className="flex w-full justify-around mt-8 gap-4 px-8">
             <Player />
             <Banker />
           </div>
-
-          <div className="baccarat-footer-grid">
-            <Wallet
-              totalbet={betamount}
-              playerOverAllbalance={playerOverAllbalance}
-            />
-            <Action
-              playerFinalScore={playerFinalScore}
-              bankerFinalScore={bankerFinalScore}
-              selectFive={() => SelectAmount("five")}
-              selectTwentyFive={() => SelectAmount("twenty-five")}
-              selectHundred={() => SelectAmount("hundred")}
-              selectTwoHundredFifty={() => SelectAmount("two-hundred-fifty")}
-              selectFiveHundred={() => SelectAmount("five-hundred")}
-              selectThousand={() => SelectAmount("thousand")}
-              deal={deal}
-              rebet={rebet}
-              dealBtnShow={dealBtnShow}
-              rebetBtnShow={rebetBtnShow}
-              clearBet={clearBet}
-              clearBtnShow={clearBtnShow}
-              playerBetAmount={playerBetAmount}
-              tieBetAmount={tieBetAmount}
-              bankerBetAmoount={bankerBetAmoount}
-              coinType={coinType}
-              playerDrop={() => selectWager("player-coordinates")}
-              tieDrop={() => selectWager("tie-coordinates")}
-              bankerDrop={() => selectWager("banker-coordinates")}
-              playerhand={player}
-              bankerhand={banker}
-              playerWinner={playerWinner}
-              bankerWinner={bankerWinner}
-              gameTied={gameTied}
-            />
-            <Chat />
+          <div className="flex w-full justify-around mt-16 gap-4 px-8 relative z-10">
+            <div className="flex sm:gap-4">
+              <img
+                src={H12}
+                className="img-responsive h-36 w-24 sm:scale-100 scale-[0.65] border-2 border-black rounded-xl"
+                role="presentation"
+                alt="hidden"
+              />
+              <img
+                src={Hidden}
+                className="img-responsive mt-6 -ml-16 sm:m-0 h-36 w-24 sm:scale-100 scale-[0.65] border-2 border-black rounded-xl"
+                role="presentation"
+                alt="hidden"
+              />
+            </div>
+            <div className="flex sm:gap-4">
+              <img
+                src={B5}
+                className="img-responsive h-36 w-24 sm:scale-100 scale-[0.65] border-2 border-black rounded-xl"
+                role="presentation"
+                alt="hidden"
+              />
+              <img
+                src={Hidden}
+                className="img-responsive mt-6 -ml-16 sm:m-0 h-36 w-24 sm:scale-100 scale-[0.65] border-2 border-black rounded-xl"
+                role="presentation"
+                alt="hidden"
+              />
+            </div>
+          </div>
+          {/* <div id="chip-container"></div> */}
+          <div id="coins-container"></div>
+          {/* <RecentBets /> */}
+          <div className="baccarat-footer-grid overflow-x-hidden md:overflow-x-clip flex justify-center lg:justify-between mt-[80px] lg:mt-[300px]">
+            <div className="2xl:block hidden mt-20">
+              <Wallet />
+              <div className="wallet-grid mt-4">
+                <div className="wallet-doller">
+                  <img src={doller} alt="" />
+                </div>
+                <div className="wallet-bet">
+                  <h4>BALANCE</h4>
+                  <span>{playerOverAllbalance}</span>
+                </div>
+                <div className="wallet-bet">
+                  <h4>TOTAL BET</h4>
+                  <span>{betamount}</span>
+                </div>
+              </div>
+            </div>
+            <div className="-mt-16 sm:mt-0">
+              <Action
+                playerFinalScore={playerFinalScore}
+                bankerFinalScore={bankerFinalScore}
+                selectFive={() => SelectAmount("five")}
+                selectTwentyFive={() => SelectAmount("twenty-five")}
+                selectHundred={() => SelectAmount("hundred")}
+                selectTwoHundredFifty={() => SelectAmount("two-hundred-fifty")}
+                selectFiveHundred={() => SelectAmount("five-hundred")}
+                selectThousand={() => SelectAmount("thousand")}
+                deal={deal}
+                rebet={rebet}
+                dealBtnShow={dealBtnShow}
+                rebetBtnShow={rebetBtnShow}
+                clearBet={clearBet}
+                clearBtnShow={clearBtnShow}
+                playerBetAmount={playerBetAmount}
+                tieBetAmount={tieBetAmount}
+                bankerBetAmoount={bankerBetAmoount}
+                coinType={coinType}
+                playerDrop={() => selectWager("player-coordinates")}
+                tieDrop={() => selectWager("tie-coordinates")}
+                bankerDrop={() => selectWager("banker-coordinates")}
+                playerhand={player}
+                bankerhand={banker}
+                playerWinner={playerWinner}
+                bankerWinner={bankerWinner}
+                gameTied={gameTied}
+              />
+              <div className="2xl:hidden block flex justify-center">
+                <div className="wallet-grid -mt-10 sm:mt-0 sm:scale-100 scale-[0.8]">
+                  <div className="wallet-bet">
+                    <h4>BALANCE</h4>
+                    <span>{playerOverAllbalance}</span>
+                  </div>
+                  <div className="wallet-bet">
+                    <h4>TOTAL BET</h4>
+                    <span>{betamount}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="lg:block hidden">
+              <Chat />
+            </div>
           </div>
         </div>
       </div>

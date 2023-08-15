@@ -1,5 +1,4 @@
 import React from "react"
-import doller from "../../assets/wallet-dollar-old.png"
 import bicon from "../../assets/b-icon.png"
 import ticon from "../../assets/t-icon.png"
 import picon from "../../assets/p-icon.png"
@@ -372,20 +371,6 @@ function Wallet(props) {
                 <img src={ticon} alt="" />
               </span>
             </div>
-          </div>
-        </div>
-
-        <div className="wallet-grid">
-          <div className="wallet-doller">
-            <img src={doller} alt="" />
-          </div>
-          <div className="wallet-bet">
-            <h4>BALANCE</h4>
-            <span>{props.playerOverAllbalance}</span>
-          </div>
-          <div className="wallet-bet">
-            <h4>TOTAL BET</h4>
-            <span>{props.totalbet}</span>
           </div>
         </div>
       </div>

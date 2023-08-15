@@ -7,7 +7,7 @@ body {
   font-family: "Eight_Bit_Dragon" !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: 100vh;
+  min-height: 100vh;
   background: #000000;
   padding: 10px;
 }
@@ -25,4 +25,16 @@ code {
 
 #root {
   /* overflow-y: auto; */
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #770314;
 }

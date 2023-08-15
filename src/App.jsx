@@ -10,7 +10,7 @@ function App() {
     // Simulating an async operation
     setTimeout(() => {
       setIsLoading(false)
-    }, 6000)
+    }, 1000)
   }, [])
   return (
     // <Routes>

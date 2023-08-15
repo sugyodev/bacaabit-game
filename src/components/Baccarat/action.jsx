@@ -13,7 +13,7 @@ import Hidden from "../../assets/cards/hidden.png"
 function Action(props) {
   return (
     <div className="action">
-      <div id="cardsLocation" className="cardsDiv">
+      {/* <div id="cardsLocation" className="cardsDiv">
         <div id="firstCard" className="cardHidden">
           <img
             src={Hidden}
@@ -44,9 +44,9 @@ function Action(props) {
             alt="hidden"
           />
         </div>
-      </div>
+      </div> */}
 
-      <div className="act-btns">
+      {/* <div className="act-btns">
         <div className={"deal-btn " + props.dealBtnShow}>
           <button type="button" onClick={props.deal}>
             Deal
@@ -63,10 +63,10 @@ function Action(props) {
             Rebet
           </button>
         </div>
-      </div>
+      </div> */}
 
-      <div className="action-wrapper">
-        <div className="action-bg">
+      <div className="action-wrapper md:scale-90 sm:scale-[0.8] scale-[0.54]">
+        <div className="action-bg bg-deposit bg-contain bg-no-repeat p-2">
           <button className="btn-1">
             <div className="single">
               <span>P PAIR</span>
