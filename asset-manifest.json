@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.00a899f1.css",
-    "main.js": "/static/js/main.08dcf24b.js",
+    "main.css": "/static/css/main.e523e978.css",
+    "main.js": "/static/js/main.a57b997f.js",
     "static/js/787.633816a4.chunk.js": "/static/js/787.633816a4.chunk.js",
     "static/media/bbs_anim.gif": "/static/media/bbs_anim.b13f8fa0a4365fd82df8.gif",
     "static/media/banker-text-old.png": "/static/media/banker-text-old.fdcb10ed423fe0e2321c.png",
@@ -13,12 +13,12 @@
     "static/media/stats-bg-new.svg": "/static/media/stats-bg-new.e570a61c052e0468bbfd.svg",
     "static/media/bg-watermark.svg": "/static/media/bg-watermark.a9d554513f2d63ac7d10.svg",
     "index.html": "/index.html",
-    "main.00a899f1.css.map": "/static/css/main.00a899f1.css.map",
-    "main.08dcf24b.js.map": "/static/js/main.08dcf24b.js.map",
+    "main.e523e978.css.map": "/static/css/main.e523e978.css.map",
+    "main.a57b997f.js.map": "/static/js/main.a57b997f.js.map",
     "787.633816a4.chunk.js.map": "/static/js/787.633816a4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.00a899f1.css",
-    "static/js/main.08dcf24b.js"
+    "static/css/main.e523e978.css",
+    "static/js/main.a57b997f.js"
   ]
 }
